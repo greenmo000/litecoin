@@ -49,6 +49,8 @@ static const bool DEFAULT_WHITELISTRELAY = true;
 static const bool DEFAULT_WHITELISTFORCERELAY = true;
 /** Default for -minrelaytxfee, minimum relay fee for transactions */
 static const unsigned int DEFAULT_MIN_RELAY_TX_FEE = 100000;
+/** Litecoin: default minimum input threshold, override with -mininput */
+static const CAmount DEFAULT_MINIMUM_INPUT_THRESHOLD = 100000 / 100; // 0.00001 LTC
 //! -maxtxfee default
 static const CAmount DEFAULT_TRANSACTION_MAXFEE = 0.1 * COIN;
 //! Discourage users to set fees higher than this amount (in satoshis) per kB
